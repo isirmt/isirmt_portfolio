@@ -1,0 +1,17 @@
+@import url(./vars.css);
+
+:root {
+  user-select: none;
+  pointer-events: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+body {
+  background-color: white;
+  font-family: lineRg, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+}

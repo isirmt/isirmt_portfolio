@@ -1,0 +1,26 @@
+:root {
+  --main-bg-color: #EFECFE;
+  --card-size: 15rem;
+  --card-size-inner: 13rem;
+  --red: #E7B5FF;
+  /* --green: #6FFFBB; */
+  --green: #67e2a9;
+  --blue: #36D8E8;
+  --card-green-text: rgb(8, 54, 68);
+}
+
+@font-face {
+	font-family: "lineRg";
+	font-weight: normal;
+	src: 
+		 url("../fonts/LINESeedJP_OTF_Rg.woff2") format("woff2"),
+		 url("../fonts/LINESeedJP_OTF_Rg.woff") format("woff");
+}
+
+@font-face {
+	font-family: "lineBd";
+	font-weight: normal;
+	src: 
+		 url("../fonts/LINESeedJP_OTF_Bd.woff2") format("woff2"),
+		 url("../fonts/LINESeedJP_OTF_Bd.woff") format("woff");
+}
