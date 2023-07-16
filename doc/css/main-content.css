@@ -20,6 +20,11 @@ h3 {
   display: grid;
   grid-template-rows: 15rem 1fr 1fr;
   grid-template-columns: calc(min(calc(100% - 20vw), 1000px) - 13rem) 1fr;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
 }
 
 .main-user-status {
@@ -56,6 +61,13 @@ h3 {
   -ms-border-radius: 17% 83% 18% 82% / 80% 20% 80% 20%;
   -o-border-radius: 17% 83% 18% 82% / 80% 20% 80% 20%;
   -webkit-filter: drop-shadow(.2rem .2rem .6rem #949494);
+}
+
+@media (max-width: 400px) {
+  .main-user-icon div {
+    width: 75vw;
+    height: 75vw;
+  }
 }
 
 .main-user-icon img {
@@ -127,8 +139,8 @@ ul.skill-list li.skill3 {
 
 @media (max-width: calc(100vh * 1 / 1)) {
   .main-grid {
-    grid-template-rows: 15rem 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
+    grid-template-rows: 15rem auto auto auto;
+    grid-template-columns: auto;
   }
   .main-user-status {
     grid-row: 1;

@@ -1,6 +1,7 @@
 @import url(./vars.css);
 
 :root {
+  color-scheme: light;
   user-select: none;
   pointer-events: none;
   -moz-user-select: none;

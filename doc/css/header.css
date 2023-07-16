@@ -33,6 +33,13 @@
   }
 }
 
+@media (max-width: 400px) {
+  .webicon {
+    height: auto;
+    width: 100%;
+  }
+}
+
 .header-right-block {
   display: flex;
 }
