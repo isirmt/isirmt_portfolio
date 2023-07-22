@@ -95,7 +95,7 @@
   height: var(--card-size-inner);
   transform: rotateX(-180deg);
   border-radius: 1rem;
-  padding: 1rem;
+  padding: .8rem 1rem 1rem 1rem;
   transition: ease-out .5s;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -139,7 +139,7 @@
 .works-back .works-description p {
   font-size: 1.1rem;
   width: 90%;
-  height: 5rem;
+  height: 5.4rem;
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;

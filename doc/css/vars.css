@@ -12,6 +12,7 @@
 @font-face {
 	font-family: "lineRg";
 	font-weight: normal;
+	font-display: swap;
 	src: 
 		 url("../fonts/LINESeedJP_OTF_Rg.woff2") format("woff2"),
 		 url("../fonts/LINESeedJP_OTF_Rg.woff") format("woff");
@@ -20,6 +21,7 @@
 @font-face {
 	font-family: "lineBd";
 	font-weight: normal;
+	font-display: swap;
 	src: 
 		 url("../fonts/LINESeedJP_OTF_Bd.woff2") format("woff2"),
 		 url("../fonts/LINESeedJP_OTF_Bd.woff") format("woff");
