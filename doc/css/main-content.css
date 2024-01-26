@@ -14,6 +14,16 @@ h3 {
   margin-top: -5rem;
 }
 
+p.plain {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+p.plain a {
+  pointer-events: auto;
+  color: blue;
+}
+
 .main-grid {
   width: min(calc(100% - 20vw), 1000px);
   margin: 0 auto;
