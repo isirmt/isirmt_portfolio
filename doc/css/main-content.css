@@ -28,7 +28,7 @@ p.plain a {
   width: min(calc(100% - 20vw), 1000px);
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 15rem 1fr 1fr;
+  grid-template-rows: 18rem 1fr 1fr;
   grid-template-columns: calc(min(calc(100% - 20vw), 1000px) - 13rem) 1fr;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
@@ -135,37 +135,76 @@ ul.skill-list li.skill3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
 }
 
 .main-user-links .link-list .link {
   pointer-events: all;
   list-style: none;
-  margin-right: 1rem;
+  position: relative;
+}
+
+.main-user-links .link-list .link::before {
+  width: 3rem;
+  height: 3rem;
+  content: "";
+  opacity: 0;
+  display: block;
+  background-color: #f0f0f0;
+  position: absolute;
+  top: -.5rem;
+  left: -.5rem;
+  border-radius: 2rem;
+  z-index: 75;
+  transition: opacity linear .2s;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  -webkit-transition: opacity linear .2s;
+  -moz-transition: opacity linear .2s;
+  -ms-transition: opacity linear .2s;
+  -o-transition: opacity linear .2s;
+}
+
+.main-user-links .link-list .link:hover::before {
+  opacity: 1;
 }
 
 .main-user-links .link-list .link img {
   width: 2rem;
+  position: relative;
+  z-index: 80;
 }
 
 @media (max-width: calc(100vh * 1 / 1)) {
   .main-grid {
-    grid-template-rows: 15rem auto auto auto;
+    grid-template-rows: 18rem auto auto auto;
     grid-template-columns: auto;
   }
+
   .main-user-status {
     grid-row: 1;
     grid-column: 1;
   }
+
   .main-user-icon {
     grid-row: 2;
     grid-column: 1;
   }
+
   .main-user-skills {
     grid-row: 3;
     grid-column: 1;
   }
+
   .main-user-links {
     grid-row: 4;
     grid-column: 1;
-  }  
+  }
+
+  .main-user-links .link-list .link::before {
+    opacity: 1;
+  }
 }
