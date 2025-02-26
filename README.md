@@ -2,7 +2,7 @@
 
 ## 公開場所
 
-<https://me.itomiri.com>
+<https://isirmt.com>
 
 ## ページ概要
 
